@@ -1,0 +1,44 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "components/Index/Balance.tsx",
+    "components/Index/Budgets.tsx",
+    "components/Index/Greeting.tsx",
+    "components/Index/NotificationsFlatList.tsx",
+    "components/Index/ProfilePhoto.tsx",
+    "components/Index/RecentTransFlatList.tsx",
+    "components/Two/AddButton.tsx",
+    "components/Pickers/CategoryPicker.tsx",
+    "components/Pickers/DateAndTimePicker.tsx",
+    "components/Filter.tsx",
+    "components/Pickers/ImagePicker.tsx",
+    "components/Two/SelectCategory.tsx",
+    "components/Two/StatusBar.tsx",
+    "components/Two/Transactions.tsx",
+    "app/addBudget.tsx",
+    "app/editBudget.tsx",
+    "app/readBudget.tsx",
+    "app/categories.tsx",
+    "app/login.tsx",
+    "app/people.tsx",
+    "app/profile.tsx",
+    "app/recurrings.tsx",
+    "app/search.tsx",
+    "app/slider.tsx",
+    "app/trash.tsx",
+    "app/categoryTransactions.tsx",
+    "app/typeDonut.tsx",
+    "app/settings.tsx",
+    "app/biometric.tsx"
+  ]
+}

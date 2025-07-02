@@ -1,0 +1,17 @@
+name: Run Vercel Cron Job
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Runs at 5:30 AM IST daily
+  workflow_dispatch:       # Allows manual trigger
+
+concurrency:
+  group: "vercel-cron-job"
+  cancel-in-progress: true  # Ensures only one run at a time
+
+jobs:
+  trigger-vercel-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Vercel API
+        run: curl -X GET "https://expense-trackerr-server.vercel.app/api/cron"
